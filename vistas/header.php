@@ -286,3 +286,4 @@ if ($_SESSION['reportes']==1) {
     </section>
     <!-- /.sidebar -->
   </aside>
+  

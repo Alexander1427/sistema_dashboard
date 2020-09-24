@@ -1,121 +1,222 @@
 <!DOCTYPE html>
+<!-- 
+Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
+Version: 1.0.0
+Author: Maxartkiller
+Website: https://www.maxartkiller.com/
+Contact: info@maxartkiller.com
+Follow: www.twitter.com/maxartkiller
+Like: www.facebook.com/maxartkiller
+Purchase: https://www.maxartkiller.com/
+License: You must have a valid license purchased only from maxartkiller.com in order to legally use the theme for your project.
+-->
 <html lang="en">
+
+<!-- Head tag -->
+
 <head>
-	<title>DESIT-SYSTEM</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="../public/images/logo.jpeg"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="../public/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="../public/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../public/css/util.css">
-<link rel="stylesheet" type="text/css" href="../public/css/main3.css">
-<!--===============================================================================================-->
+    <meta charset="utf-8" />
+    <title>DESIT SISTEMA PRO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DESIT SISTEMA PRO." name="description" />
+    <meta content="" name="author" />
+    <link rel="shortcut icon" href="../assets/img/desit_logo.png">
+
+    <!-- g fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <!-- g fonts style ends -->
+
+    <!-- Vendor or 3rd party style -->
+
+    <!-- material icons -->
+    <link href="../assets/vendor/material-icons/material-icons.css" rel="stylesheet">
+    <!-- flags icons -->
+    <link href="../assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
+    <!-- daterange picker -->
+    <link href="../assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
+
+    <!-- Vendor or 3rd party style ends -->
+
+    <!-- Customized template style mandatory -->
+    <link href="../assets/css/style-darkblue-dark.css" rel="stylesheet" id="stylelink">
+    <!-- Customized template style ends -->
 </head>
 
-<body style="background-color: #999999;">
-	<style>
-		.logo img{
-	
-	position: absolute;
-	top: 8%;
-	left: 70%;
-    width:100px;
-    height:100px;
-    border-radius: 150px;
-}
-	</style>
+<!-- Head tag ends -->
 
-	<div class="limiter">
-		<div class="container-login100">
-			
-			<div class="login100-more" style="background-image: url('../public/images/logo.jpeg');"></div>
+<!-- Body -->
 
-
-
-			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form method="post" id="frmAcceso">
-					<span class="login100-form-title p-b-59">
-						INICIAR SESIÓN
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate="Escriba un nombre">
-						<span class="label-input100">USUAIO</span>
-						<input class="input100" type="text" id="logina" name="logina" placeholder="Name...">
-						<span class="focus-input100"></span>
-					</div>
-
-				
-
-					
-
-					<div class="wrap-input100 validate-input" data-validate = "Contraseña requerida">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" id="clavea" name="clavea" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					
+<body class="h-100 no-sidemenu">
+    <div class="loader container-fluid">
+        <div class="row h-100">
+            <div class="col-auto align-self-center  mx-auto text-center">
+                <div class="loader-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+                <h2>DESIT</h2>
+                <p>DASHBOARD PRO</p>
+            </div>
+        </div>
+    </div>
 
 
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
+    <div class="wrapper">
+        <div class="content shadow-sm position-relative">
+            <header class="header">
+                <!-- Fixed navbar -->
+                <nav class="container-fluid">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <a href="" class="logo text-white">
+                                <img src="../assets/img/desit_logo.png" alt="" class="logo-icon" height="70px">
+                                <div class="logo-text">
+                                    <h5 class="fs22 mb-0">DESIT <sup class="badge badge-success">PRO</sup></h5>
+                                    <p class="text-uppercase fs11">Admin Dashboard</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col text-right align-self-center">
+                            <a href="https://desitsv.com/sistemas/page-contact-one.html" class="btn btn-sm btn-primary text-uppercase">Registro</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="background opac blur">
+                <img src="../assets/img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg" alt="">
+            </div>
 
-							<div class="login100-form-bgbtn"></div>
-							<button type="submit" class="login100-form-btn">
-								INICIAR SESIÓN
-							</button>
-							
-						</div>
-						
-						
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	<!-- jQuery 3 -->
-<script src="../public/js/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<!-- Bootstrap 3.3.7 -->
-<script src="../public/js/bootstrap.min.js"></script>
-<script src="../public/js/bootbox.min.js"></script>
-<script src="scripts/login.js"></script>
-<!-- iCheck -->
-<!--===============================================================================================-->
-	<script src="../public/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/vendor/bootstrap/js/popper.js"></script>
-	<script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/vendor/daterangepicker/moment.min.js"></script>
-	<script src="../public/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="../public/js/main.js"></script>
+            <!-- Main container starts -->
+            <div class="container main-container" id="main-container">
+                <div class="row login-row-height">
+                    <div class="col-12 col-md-6 col-lg-7 d-none d-md-flex"></div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4  align-self-center">
+                        <div class="card border-0 shadow-lg blur">
+                            <div class="card-body py-5">
+                                <h5 class="font-weight-light mb-1 text-mute-high">Bienvenido,</h5>
+                                <h3 class="font-weight-normal mb-4">Porfavor Inicia Sesion</h3>
+                                <div class="card  mb-2 overflow-hidden">
+                                    <div class="card-body p-0">
+                                        <form method="post" id="frmAcceso">
+                                            <label for="inputEmail" class="sr-only">Usuario</label>
+                                            <input type="text" id="logina" name="logina" class="form-control rounded-0 border-0" placeholder="Usuario" required="" autofocus="">
+                                            <hr class="my-0">
+                                            <label for="inputPassword" class="sr-only">Contraseña</label>
+                                            <input type="password" id="clavea" name="clavea" class="form-control rounded-0 border-0" placeholder="Password" required="">
 
+
+                                    </div>
+                                </div>
+                                <div class="my-3 row">
+                                    <div class="col-12 col-md py-1">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                            <label class="custom-control-label" for="customCheck1">Recuerdame</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md py-1 text-left text-md-right">
+                                        <a href="resetpassword.html" class="template-primary">Olvidaste tu contraseña?</a>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+
+                                    <button type="submit" class=" btn btn-primary btn-block">Iniciar Sesion <i class="material-icons md-18">arrow_forward</i></button>
+                                    </form>
+                                </div>
+                                <div class="">
+                                    <p class="text-mute">
+                                        No tienes cuenta?<br> Solicitala <a href="https://desitsv.com/sistemas/page-contact-one.html" class="text-template-primary-light">Aqui</a> .
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main container ends -->
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md text-center text-md-left align-self-center">
+                        <p>Todos los derechos reservados <a href="http://desitsv.com/">DESIT</a></p>
+                    </div>
+                    <div class="col-12 col-md-auto text-center text-md-right">
+                        <ul class="nav justify-content-center justify-md-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="https://desitsv.com/sistemas/page-terms.html">Terminos y condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://desitsv.com/privacy-policy">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://desitsv.com/sistemas/page-contact-one.html">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- wrapper ends -->
+    <!-- jQuery 3 -->
+    <script src="../public/js/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/bootbox.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <!-- iCheck -->
+    <!--===============================================================================================-->
+    <script src="../public/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/vendor/bootstrap/js/popper.js"></script>
+    <script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/vendor/daterangepicker/moment.min.js"></script>
+    <script src="../public/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="../public/js/main.js"></script>
+    <!-- Global js mandatory -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/cookie/jquery.cookie.js"></script>
+    <!-- Global js ends -->
+
+    <!-- Vendor or 3rd party js -->
+
+    <!-- date range picker -->
+    <script src="../assets/vendor/daterangepicker-master/moment.min.js"></script>
+    <script src="../assets/vendor/daterangepicker-master/daterangepicker.js"></script>
+    <!-- Vendor or 3rd party js ends -->
+
+    <!-- Customized template js mandatory -->
+    <script src="../assets/js/main.js"></script>
+    <!-- Customized template js ends -->
+
+    <!-- theme picker -->
+    <script src="../assets/js/style-picker.js"></script>
+    <!-- theme picker ends -->
+
+    <!-- Customized page level js -->
+    <script>
+        'use strict'
+        $(document).ready(function() {
+
+        });
+    </script>
+    <!-- Customized page level js ends -->
 </body>
+
+<!-- Body ends -->
+
 </html>
