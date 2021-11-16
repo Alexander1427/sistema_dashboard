@@ -36,7 +36,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="DESIT SISTEMAS PRO" name="description" />
     <meta content="" name="DESIT" />
-    <link rel="shortcut icon" href="../assets/img/desit_logo.png">
+    <link rel="shortcut icon" href="../assets/img/logo_drogueriapng.png">
     <!-- g fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <!-- g fonts style ends -->
@@ -51,8 +51,20 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <link href="../assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
     <!-- dropzone js -->
     <link href="../assets/vendor/dropzone-master/dist/dropzone.css" rel="stylesheet">
+    
 
     <!-- Vendor or 3rd party style ends -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
+<link rel="stylesheet" href="chat2/css/normalize.css"> 
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+
+        <link rel="stylesheet" href="chat2/css/style.css"> 
+
 
     <!-- Customized template style mandatory -->
     <link href="../assets/css/style-darkblue-dark.css" rel="stylesheet" id="stylelink">
@@ -91,9 +103,9 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="sidebar">
         <!-- Logo sidebar -->
         <a href="escritorio2.php" class="logo">
-            <img src="../assets/img/desit_logo.png" alt="" class="logo-icon" height="60px">
+            <img src="../assets/img/logo_drogueriapng.png" alt="" class="logo-icon" height="60px">
             <div class="logo-text">
-                <h5 class="fs22 mb-0">DESIT <sup class="badge badge-success">PRO</sup></h5>
+                <h5 class="fs22 mb-0"> <sup class="badge badge-success">PRO</sup></h5>
                 <p class="text-uppercase fs11">SISTEM Dashboard</p>
             </div>
         </a>
@@ -122,9 +134,10 @@ $query="SELECT COUNT(*) as total FROM `articulo` WHERE `stock`<=5";
       <div class="nav-item"><a class="nav-link" href="categoria2.php"><span>Categorias</span></a></div>
   </div>
 </li><li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">phone</i><span>Whatsapp</span> <i class="material-icons arrow">expand_more</i></a>
+<a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">phone</i><span>Mensajes</span> <i class="material-icons arrow">expand_more</i></a>
 <div class="nav flex-column">
-    <div class="nav-item"><a class="nav-link" href="inbox.php"><span>MENSAJES</span></a></div>
+    <div class="nav-item"><a class="nav-link" href="inbox.php"><span>Whatsapp</span></a></div>
+    <div class="nav-item"><a class="nav-link" href="correo.php"><span>Correo</span></a></div>
     
 </div>
 </li>';
@@ -346,61 +359,7 @@ if ($_SESSION['reportes']==1) {
                                             </div>
                                         </li>
 
-                                        <!-- applicatio quicklinks dropdown-->
-                                        <!--li class="nav-item dropdown d-none d-sm-flex">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="material-icons">apps</i>
-                                            </a>
-                                            <!--div class="dropdown-menu dropdown-menu-center no-defaults pt-0 overflow-hidden" aria-labelledby="navbarDropdown2">
-                                                <div class="position-relative text-center rounded">
-                                                    <div class="background">
-                                                        <img src="../assets/img/background-part.png" alt="">
-                                                    </div>
-                                                    <div class="pt-4 pb-5 text-white">
-                                                        <h5 class="font-weight-normal">Quick Access</h5>
-                                                        <p>Get Quick access to your<br>favorite applications</p>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                                <div class="row mx-0 top-60">
-                                                    <div class="col-12 col-md-11 mx-auto">
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <div class="card border-0 shadow mb-3">
-                                                                    <div class="card-body text-center">
-                                                                        <i class="avatar avatar-40 material-icons text-template-primary my-3">favorite</i>
-                                                                        <p>Dashboard</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="card border-0 shadow mb-3">
-                                                                    <div class="card-body text-center">
-                                                                        <i class="avatar avatar-40 material-icons bg-light-warning text-warning my-3">style</i>
-                                                                        <p>Sidebar</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="card border-0 shadow mb-3">
-                                                                    <div class="card-body text-center">
-                                                                        <i class="avatar avatar-40 material-icons bg-light-danger text-danger my-3">library_books</i>
-                                                                        <p>Pages</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="card border-0 shadow mb-3">
-                                                                    <div class="card-body text-center">
-                                                                        <i class="avatar avatar-40 material-icons bg-light-success text-success my-3">poll</i>
-                                                                        <p>Charts</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div-->
+                                       
                                         </li-->
 
                                         <!-- cart dropdown-->
@@ -603,6 +562,21 @@ if ($_SESSION['reportes']==1) {
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="dropdown-item border-top">
+  <div class="row">
+      <div class="col-auto">
+          <span class="avatar avatar-30 material-icons text-template-primary">local_activity</span>
+      </div>
+      <div class="col px-0">
+          <div class="form-group mb-0 float-label active">
+              <input type="text" class="form-control form-control-sm" required="" placeholder="Coupan Code">
+          </div>
+      </div>
+      <div class="col-auto">
+          <button class="btn btn-primary btn-sm px-0 text-white"><i class="material-icons md-18">arrow_forward</i></button>
+      </div>
+  </div>
+</div>
                                                         <div class="dropdown-item border-top">
                                                             <button class="btn btn-primary text-white btn-block mt-2"><span>Complete</span><i class="material-icons md-18">arrow_forward</i></button>
                                                         </div>
@@ -1022,7 +996,7 @@ if ($_SESSION['reportes']==1) {
             </div>
 
             <!-- Main container starts -->
-            < <div class="container main-container" id="main-container">
+            <div class="container main-container" id="main-container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="card border-0 shadow-sm overflow-hidden mb-4">
@@ -2018,118 +1992,94 @@ if ($_SESSION['reportes']==1) {
                     <span class="rounded avatar avatar-20">
                         <i class="material-icons fs15 vm text-mute">close</i>
                     </span>
-                </button>
-            </div>
-            <div class="card-body chat-list scroll-y p-0 ">
-                <div class="p-3">
-                    <div class="row left-chat">
-                        <div class="col-auto">
-                            <figure class="avatar avatar-20">
-                                <img src="../assets/img/user1.png" alt="">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <div class="chat-block">
-                                <div class="row">
-                                    <div class="col">
-                                        Bienvenido! ¿Cuentanos que necesitas?
-                                        <p class="text-mute small mt-2">8:00 pm</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row right-chat">
-                        <div class="col pr-0">
-                            <div class="chat-block">
-                                <div class="row">
-                                    <div class="col">
-                                       Quiero saber como ingresar un producto
-                                        <p class="text-mute small mt-2">8:05 pm</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <figure class="avatar avatar-20">
-                                <img src="../assets/img/user3.png" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row left-chat">
-                        <div class="col-auto">
-                            <figure class="avatar avatar-20">
-                                <img src="../assets/img/user1.png" alt="">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <div class="chat-block">
-                                <div class="row">
-                                    <div class="col">
-                                        Con gusto te ayudo.<br>
-                                        Revisa este video para poder hacer el proceso de ingreso de productos.
-                                       <a href="https://www.youtube.com/watch?v=I-QfPUz1es8" target="blank">INGRESO DE PRODUCTOS</a>
-                                        <p class="text-mute small mt-2">8:06 pm</p>
-                                    </div>
+                    
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row right-chat">
-                        <div class="col pr-0">
-                            <div class="chat-block">
-                                <div class="row">
-                                    <div class="col">
-                                        <p>Muchas gracias me fue de gran ayuda. </p>
-                                        <p class="text-mute small mt-2">8:10 pm</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <figure class="avatar avatar-20">
-                                <img src="../assets/img/user3.png" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row left-chat">
-                        <div class="col-auto">
-                            <figure class="avatar avatar-20">
-                                <img src="../assets/img/user1.png" alt="">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <div class="chat-block">
-                                <div class="row">
-                                    <div class="col">
-                                        Me alegro mucho.<br>
-                                        Tienes alguna otra duda?.
-                                       
-                                        <p class="text-mute small mt-2">8:11 pm</p>
-                                    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-footer px-0">
-                <div class="input-group">
-                    <div class="input-group-prepend ">
-                        <button class="btn btn-link fs15 py-0 " type="button" id="button-addon4"><i class="material-icons vm">attachment</i></button>
-                    </div>
-                    <input type="text" class="form-control form-control-sm rounded" placeholder="Type Message..." aria-label="Message">
-                    <div class="input-group-append ">
-                        <button class="btn btn-link py-0 " type="button" id="button-addon5">
-                            <i class="material-icons fs15 vm">send</i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+
+      
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBGk3GPEHXH2tM4TQU_1Z_Bx-9dzphRhME",
+    authDomain: "live-chat7089.firebaseapp.com",
+    databaseURL: "https://live-chat7089.firebaseio.com",
+    projectId: "live-chat7089",
+    storageBucket: "live-chat7089.appspot.com",
+    messagingSenderId: "14674242096",
+    appId: "1:14674242096:web:3d4605ad070d0ffc8a1bf5",
+    measurementId: "G-54RTKZ2S5M"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.database().ref("messages").on("child_removed", function (snapshot) {
+    document.getElementById("message-" + snapshot.key).innerHTML = "This message has been deleted";
+  });
+
+  function deleteMessage(self) {
+    var messageId = self.getAttribute("data-id");
+    firebase.database().ref("messages").child(messageId).remove();
+  }
+
+  function sendMessage() {
+    var message = document.getElementById("message").value;
+    firebase.database().ref("messages").push().set({
+      "message": message,
+      "sender": myName
+    });
+    return false;
+  }
+</script>
+
+<style>
+  figure.avatar {
+    bottom: 0px !important;
+  }
+  .btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="chat">
+  <div class="chat-title">
+    <h1>Chat Room</h1>
+    <h2>Firebase</h2>
+    <figure class="avatar">
+      <img src="https://p7.hiclipart.com/preview/349/273/275/livechat-online-chat-computer-icons-chat-room-web-chat-others.jpg" /></figure>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" id="message" placeholder="Type message..."></textarea>
+    <button type="submit" class="message-submit">Send</button>
+  </div>
+
+</div>
+<div class="bg"></div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+
+        <script src="js/index.js?v=<?= time(); ?>"></script>
+
+
+                    
     <!-- Chat  window and buttons ends -->
 
     <!-- Theme style picker modal window and options -->
