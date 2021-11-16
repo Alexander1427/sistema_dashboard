@@ -5,17 +5,6 @@ if (strlen(session_id())<1) {
 }
   ?>
   <!DOCTYPE html>
-<!-- 
-Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
-Version: 1.0.0
-Author: Maxartkiller
-Website: https://www.maxartkiller.com/
-Contact: info@maxartkiller.com
-Follow: www.twitter.com/maxartkiller
-Like: www.facebook.com/maxartkiller
-Purchase: https://www.maxartkiller.com/
-License: You must have a valid license purchased only from maxartkiller.com in order to legally use the theme for your project.
--->
 <html lang="en">
 
 <!-- Head tag -->
@@ -82,9 +71,9 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="sidebar">
         <!-- Logo sidebar -->
         <a href="escritorio2.php" class="logo">
-            <img src="../assets/img/desit_logo.png" alt="" class="logo-icon" height="60px">
+            <img src="../assets/img/logo_drogueriapng.png" alt="" class="logo-icon" height="60px">
             <div class="logo-text">
-                <h5 class="fs22 mb-0">DESIT <sup class="badge badge-success">PRO</sup></h5>
+                <h5 class="fs22 mb-0"> <sup class="badge badge-success">PRO</sup></h5>
                 <p class="text-uppercase fs11">SISTEM Dashboard</p>
             </div>
         </a>
@@ -203,12 +192,13 @@ if ($_SESSION['consultac']==1) {
 if ($_SESSION['consultav']==1) {
   echo '    <ul class="nav flex-column">
   <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
-      <div class="nav flex-column">
-          <div class="nav-item"><a class="nav-link" href="ventasfechacliente2.php"><span>Productos y Servicios</span></a></div>
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
+  <div class="nav flex-column">
+      <div class="nav-item"><a class="nav-link" href="informe.php"><span>Informes</span></a></div>
 
-      </div>
-  </li>
+  </div>
+</li>
+
 </ul>';
 }
         ?>

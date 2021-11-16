@@ -56,9 +56,9 @@ if (strlen(session_id())<1) {
     <div class="sidebar">
         <!-- Logo sidebar -->
         <a href="escritorio2.php" class="logo">
-            <img src="../assets/img/desit_logo.png" alt="" class="logo-icon" height="60px">
+            <img src="../assets/img/logo_drogueriapng.png" alt="" class="logo-icon" height="60px">
             <div class="logo-text">
-                <h5 class="fs22 mb-0">DESIT <sup class="badge badge-success">PRO</sup></h5>
+                <h5 class="fs22 mb-0"> <sup class="badge badge-success">PRO</sup></h5>
                 <p class="text-uppercase fs11">SISTEM Dashboard</p>
             </div>
         </a>
@@ -177,12 +177,13 @@ if ($_SESSION['consultac']==1) {
 if ($_SESSION['consultav']==1) {
   echo '    <ul class="nav flex-column">
   <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
-      <div class="nav flex-column">
-          <div class="nav-item"><a class="nav-link" href="ventasfechacliente2.php"><span>Productos y Servicios</span></a></div>
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
+  <div class="nav flex-column">
+      <div class="nav-item"><a class="nav-link" href="informe.php"><span>Informes</span></a></div>
 
-      </div>
-  </li>
+  </div>
+</li>
+
 </ul>';
 }
         ?>
@@ -1333,7 +1334,7 @@ if ($_SESSION['reportes']==1) {
                                     <small>Shift technology offices</small>
 
                                 </p>
-                                <img src="../assets/img/desit_logo.png" alt="" height="25px">
+                                <img src="../assets/img/logo_drogueriapng.png" alt="" height="25px">
                             </div>
                         </div>
                         <div class="row mt-4">

@@ -27,7 +27,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="DESIT SISTEMAS PRO" name="description" />
     <meta content="" name="DESIT" />
-    <link rel="shortcut icon" href="../assets/img/desit_logo.png">
+    <link rel="shortcut icon" href="../assets/img/logo_drogueriapng.png">
     <!-- g fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <!-- g fonts style ends -->
@@ -82,9 +82,9 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="sidebar">
         <!-- Logo sidebar -->
         <a href="escritorio2.php" class="logo">
-            <img src="../assets/img/desit_logo.png" alt="" class="logo-icon" height="60px">
+            <img src="../assets/img/logo_drogueriapng.png" alt="" class="logo-icon" height="60px">
             <div class="logo-text">
-                <h5 class="fs22 mb-0">DESIT <sup class="badge badge-success">PRO</sup></h5>
+                <h5 class="fs22 mb-0"> <sup class="badge badge-success">PRO</sup></h5>
                 <p class="text-uppercase fs11">SISTEM Dashboard</p>
             </div>
         </a>
@@ -203,12 +203,13 @@ if ($_SESSION['consultac']==1) {
 if ($_SESSION['consultav']==1) {
   echo '    <ul class="nav flex-column">
   <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
-      <div class="nav flex-column">
-          <div class="nav-item"><a class="nav-link" href="ventasfechacliente2.php"><span>Productos y Servicios</span></a></div>
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">library_books</i><span>Reportes</span> <i class="material-icons arrow">expand_more</i></a>
+  <div class="nav flex-column">
+      <div class="nav-item"><a class="nav-link" href="informe.php"><span>Informes</span></a></div>
 
-      </div>
-  </li>
+  </div>
+</li>
+
 </ul>';
 }
         ?>
@@ -1252,7 +1253,7 @@ if ($_SESSION['reportes']==1) {
                                     <div class="col-md-10 mx-auto">
                                         <div class="row ">
                                             <div class="col-lg-12 col-md-12 text-center">
-                                                <img src="../assets/img/desit_logo.png" alt="" class="w-50px mt-4">
+                                                <img src="../assets/img/logo_drogueriapng.png" alt="" class="w-50px mt-4">
                                                 <h4 class="mt-3 mb-1">INGRESO DE PROVEEDORES</h4>
                                                 <p class="text-mute">DESIT</p>
                                             </div>
