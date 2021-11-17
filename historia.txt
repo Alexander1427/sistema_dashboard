@@ -1,5 +1,3 @@
 aprendiendoa usas git en servidor local
 
-cambiando y jugando con los archivos
-
-sigo practicando con git, y luego sigo php
+cambiando y codificando a php
